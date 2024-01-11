@@ -1,0 +1,76 @@
+name: Button
+version: 0.7
+source: "@partz/ui-btn/src/btn/Button.tsx"
+
+description: >
+  The Button component allows you to create a clickable button with onClick action
+
+inherits:
+  ref: ni8nii
+
+props:
+
+  - name: "trigger"
+    type: "object"
+    restriction: "Trigger | null"
+    required: false
+    fallback: undefined
+    description: >
+      A trigger is an object that describes the actions and configurations for the button. The object is defined by an
+      action, an onClick, and optional state, css, icon, disabled and label props. If trigger is null or not given, the
+      component uses set default or values given by other props.
+
+  - name: "label"
+    type: "string"
+    restriction: "string | null"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for the label prop to be set outside of the trigger, but will only be used if trigger is
+      undefined or null.  
+      
+
+  - name: "icon"
+    type: "string"
+    restriction: "string | null"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for the icon prop to be set outside of the trigger, but will only be used if trigger is 
+      undefined or null.  
+      
+
+  - name: "type"
+    type: "string"
+    restriction: "button | submit | reset"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for the type prop to be set outside of the trigger, but will only be used if trigger is 
+      undefined or null.
+
+  - name: "css"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for the css prop to be set outside of the trigger, but will only be used if trigger is 
+      undefined or null.
+
+  - name: "onClick"
+    type: "function"
+    restriction: "EventH"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for an onClick function to be set outside of the trigger, but will only be used if trigger is 
+      undefined or null.
+
+  - name: "disabled"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      Allows for the disabled prop to be set outside of the trigger, but will only be used if trigger is 
+      undefined or null.

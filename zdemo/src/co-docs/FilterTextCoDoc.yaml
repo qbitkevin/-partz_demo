@@ -1,0 +1,48 @@
+name: FilterTextCo
+version: 0.7
+source: "@partz/ui-co/src/filter/FilterTextCo.ts"
+
+description: >
+  The FilterTextCo component allows you to enter text and search and filter through it.
+
+inherits:
+  ref: ni8nii
+
+
+props:
+
+  - name: "value"
+    type: "string"
+    required: true
+    fallback: undefined
+    description: >
+      Determines the value inside the text box. 
+
+  - name: "onChange"
+    type: "function"
+    restriction: "Consumer<string>"
+    required: true
+    fallback: undefined
+    description: >
+      Defines the function to be called when a change in the value occurs. 
+
+  - name: "delay"
+    type: "number"
+    required: false
+    fallback: 350
+    description: >
+      Sets the delay before the onChange function is called, so that onChange is only called when needed. 
+
+  - name: "css"
+    type: "string"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for a class name to be placed on the specific TextCo. 
+
+  - name: "placeholder"
+    type: "string"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for a placeholder to be shown in the text box when there is no value. 

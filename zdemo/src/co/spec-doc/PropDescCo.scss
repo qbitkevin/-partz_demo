@@ -1,0 +1,13 @@
+.PropDescriber {
+    padding-bottom: 1em;
+    .-prop-name {
+        max-width: 15em;
+    }
+    .-prop-type {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin-bottom: .5em
+    }
+}

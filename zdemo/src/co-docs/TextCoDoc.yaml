@@ -1,0 +1,167 @@
+
+name: TextCo
+version: 0.7
+source: "@partz/ui-co/src/text/TextCo.ts"
+
+description: >
+  The TextCo component allows you to create a text box that can have a default or custom placeholder
+
+inherits:
+  ref: ni8nii
+
+props:
+
+  - name: "required"
+    type: "boolean"
+    restriction: "true | false"
+    required: false
+    fallback: false
+    description: >
+      Sets weather the field is requires an input. When required is true, a red line denoting that it is required 
+      appears by default 
+
+  - name: "label"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      inihiuhoni                 
+      
+
+  - name: "field"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: "anon"
+    description: >
+      inihiuhoni 
+
+  - name: "css"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for a class name to be placed on the specific TextCo.
+      
+
+  - name: "style"
+    type: "object"
+    restriction: "object | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      Can be sent in as an object with styling syntax and will apply the styling to the TextCo without the need for 
+      a className. Also overrides css styling.
+
+  - name: "autoFocus"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      A boolean prop that when true, will automatically place the cursor in the TextCo entry box.
+
+  - name: "autoComplete"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      inihiuhoni
+
+  - name: "doChangedOnEnter"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      If doChangedOnEnter is true, a function will be called when the user presses enter.
+
+  - name: "doChangedOnFirstKeystroke"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      Will call a function after the first keystroke is typed, if the prop is set to true.
+
+  - name: "doKeyFiltering"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      inihiuhoni
+
+  - name: "disabled"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      When the disabled prop is true, it locks the user from being able to change the value in the text box and 
+      clicking the text box and it dims the text box giving it the disabled look.
+
+  - name: "readOnly"
+    type: "boolean"
+    required: false
+    fallback: false
+    description: >
+      When readOnly is true, it stops the user from changing the value in the box, but doesn't dim the box and still
+      lets the the user put there cursor in the box, unlike the disabled prop. 
+
+  - name: "type"
+    type: "string"
+    restriction: "string | null"
+    required: true
+    fallback: undefined
+    description: >
+      inihiuhoni
+
+  - name: "value"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      Sets the value in the TextCo field.     
+
+  - name: "placeholder"
+    type: "string"
+    restriction: "string | null"
+    required: false
+    fallback: "any text"
+    description: >
+      Allows for a placeholder to be shown in the text box when there is no value.
+
+  - name: "validator"
+    type: "function"
+    required: false
+    fallback: undefined
+    description: >
+      Validates the text value against something.
+
+  - name: "onChanging"
+    type: "function"
+    required: false
+    fallback: undefined
+    description: >
+      Calls a function on each new keystroke.
+
+  - name: "onChange"
+    type: "function"
+    required: false
+    fallback: undefined
+    description: >
+      Calls a function after making a change and leaving the text box, as opposed to onChanging, which calls a
+      function on every keystroke change.
+
+  - name: "onBlur"
+    type: "function"
+    required: false
+    fallback: undefined
+    description: >
+      The onBlur prop refers to the action of clicking out of the text control. When true, it calls a function whenever
+      blurred( clicked/escaped out of).
+      
+
+  
+
+
+

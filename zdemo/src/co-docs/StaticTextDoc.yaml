@@ -1,0 +1,33 @@
+name: StaticText
+version: 0.7
+source: "@partz/ui-co/src/text/StaticText.ts"
+
+description: >
+  The StaticText component allows you to create a text box that is readOnly and gets its
+  value from a different location
+
+inherits:
+  ref: ni8nii
+
+props:
+
+  - name: "value"
+    type: "string | object | array | number"
+    restriction: "Value | null"
+    required: true
+    fallback: undefined
+    description: >
+      The value prop should usually be a string but can also be sent an object, a number or an array. If sent a string,
+      it inputs the string as the value of the text box, if it is an object, it will look to return value.description,
+      value.label or value.name and if those don't exist, will call toString on the object, number, or array. If value 
+      is null or undefined, returns empty string. Note: the demo only accepts strings currently, but implementation has
+      full support.
+
+  - name: "css"
+    type: "string"
+    restriction: "string | undefined"
+    required: false
+    fallback: undefined
+    description: >
+      Allows for a class name to be placed on the specific TextCo.
+                                                          

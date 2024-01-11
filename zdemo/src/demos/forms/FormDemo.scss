@@ -1,0 +1,17 @@
+@use '@partz/styling/src/theming/_theme-fns.scss' as theming;
+
+.FormDemo {
+    --rz-pad : 1em;
+
+    rz-form {
+        --rz-pad: 1em;
+        --rz-bc : var(--rz-gray-7);
+        --rz-bw : 2px;
+        --rz-bt : solid;
+        --rz-br : 1em;
+
+        @include theming.applyToCanvas();
+
+        margin-bottom: 2em;
+    }
+}

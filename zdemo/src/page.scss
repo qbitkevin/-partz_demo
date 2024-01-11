@@ -1,0 +1,26 @@
+
+@use '../node_modules/@partz/styling/dist/rz-ux-page.css';
+//@use '../node_modules/@partz/styling/dist/rz-themed-page.css';
+
+// page setup
+@layer demo.page {
+    body.whole {
+
+        ul, ol {
+            padding: 0;
+        }
+
+        & > footer {
+            padding: 1em;
+            background-color: darkslategray;
+            color: white;
+        }
+    }
+}
+
+// demo content setup
+#zdemo-demo1 {
+    p {
+        margin-bottom: 0.5em;
+    }
+}

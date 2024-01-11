@@ -1,0 +1,19 @@
+
+@use 'sass:meta';
+
+/*
+ Overrides of default rz theme.
+ */
+.rz-themed {
+    --rz-pane-body-pad     : 0;
+}
+
+.rz--demo {
+    @include meta.load-css( '../node_modules/@partz/ui-basics/lib/style.css' );
+    @include meta.load-css( '../node_modules/@partz/ui-btn/lib/style.css' );
+    @include meta.load-css( '../node_modules/@partz/ui-co/lib/style.css' );
+    @include meta.load-css( '../node_modules/@partz/ui-form/lib/style.css' );
+    @include meta.load-css( '../node_modules/@partz/ui-layout/lib/style.css' );
+
+
+}
